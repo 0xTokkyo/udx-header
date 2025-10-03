@@ -1,0 +1,81 @@
+{
+  "name": "udx-header",
+  "displayName": "UDX Header",
+  "description": "Automatically insert and maintain custom ASCII headers in Uxon Dynamics projects and beyond.",
+  "version": "1.0.14",
+  "publisher": "0xTokkyo",
+  "icon": "src/u-udx-logo-multisize/u-udx-logo-128.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0xTokkyo/udx-header"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Snippets",
+    "Formatters",
+    "Other"
+  ],
+  "keywords": [
+    "header",
+    "ascii",
+    "template",
+    "file-header",
+    "copyright",
+    "author",
+    "project",
+    "uxon-dynamics",
+    "udx"
+  ],
+  "license": "MIT",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "udxHeader.insertHeader",
+        "title": "UDX Header: Insert Header"
+      },
+      {
+        "command": "udxHeader.setGithubUser",
+        "title": "UDX Header: Set GitHub username"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "udxHeader.insertHeader",
+        "key": "ctrl+alt+h",
+        "mac": "cmd+alt+h"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "UDX Header",
+      "properties": {
+        "udxHeader.githubUser": {
+          "type": "string",
+          "default": "0xTokkyo",
+          "description": "GitHub username"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "create": "tsc -p ./ && vsce package",
+    "deploy": "tsc -p ./ && vsce package && vsce create-publisher 0xTokkyo && vsce publish"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.60.0",
+    "tsx": "^4.20.6",
+    "typescript": "^4.0.0",
+    "vsce": "^1.100.0"
+  }
+}
