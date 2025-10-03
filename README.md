@@ -70,7 +70,7 @@ None at this time. If you encounter any issues, please report them on the [GitHu
 
 ## Release Notes
 
-### 1.0.13
+### 1.0.15
 
 - Initial release with header insertion functionality
 - Configurable GitHub username

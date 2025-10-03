@@ -2,7 +2,7 @@
   "name": "udx-header",
   "displayName": "UDX Header",
   "description": "Automatically insert and maintain custom ASCII headers in Uxon Dynamics projects and beyond.",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "publisher": "0xTokkyo",
   "icon": "src/u-udx-logo-multisize/u-udx-logo-128.png",
   "repository": {
