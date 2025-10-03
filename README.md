@@ -1,21 +1,10 @@
 # UDX Header
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/0xTokkyo.udx-header)](https://marketplace.visualstudio.com/items?itemName=0xTokkyo.udx-header)
-[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/0xTokkyo.udx-header)](https://marketplace.visualstudio.com/items?itemName=0xTokkyo.udx-header)
-
 Automatically insert and maintain custom ASCII headers in your code files with project information, author details, and timestamps. Perfect for Uxon Dynamics projects and beyond.
 
 ![UDX Header Logo](src/u-udx-logo-multisize/u-udx-logo-128.png)
 
 ## Features
-
-- **🎨 Custom ASCII Headers**: Insert beautiful ASCII art headers in your code files
-- **🔄 Auto-Update**: Automatically updates timestamps and project information
-- **⚙️ Configurable**: Set your GitHub username and customize header content
-- **⌨️ Keyboard Shortcuts**: Quick insertion with `Ctrl+Alt+H` (or `Cmd+Alt+H` on Mac)
-- **📁 Multi-language Support**: Works with various file types and programming languages
-
-## Installation
 
 1. Open Visual Studio Code
 2. Press `Ctrl+P` (or `Cmd+P` on Mac) to open the Quick Open dialog
@@ -27,11 +16,6 @@ Automatically insert and maintain custom ASCII headers in your code files with p
 ### Insert Header
 
 There are several ways to insert a header:
-
-1. **Command Palette**: 
-   - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
-   - Type "UDX Header: Insert Header"
-   - Press Enter
 
 2. **Keyboard Shortcut**: 
    - Press `Ctrl+Alt+H` (or `Cmd+Alt+H` on Mac)
@@ -63,16 +47,17 @@ The extension provides the following configuration options:
 ## Example Header Output
 
 ```
-/**
- * ╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
- * ║                                        UDX PROJECT                                            ║
- * ╠═══════════════════════════════════════════════════════════════════════════════════════════════╣
- * ║  Author: YourGitHubUsername                                                                   ║
- * ║  Created: 2025-10-04                                                                          ║
- * ║  Modified: 2025-10-04                                                                         ║
- * ║  Project: udx-header                                                                          ║
- * ╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
- */
+/* ***************************************************************************** */
+/*                                                          __  __ ____  _  __   */
+/*                                                         / / / // __ \| |/ /   */
+/*   udx.ts.                                              / / / // / / /|   /    */
+/*                                                       / /_/ // /_/ //   |     */
+/*   By: 0xTokkyo                                        \____//_____//_/|_|     */
+/*                                                                               */
+/*   Created: 2025-10-04 15:14:08 by 0xTokkyo                                    */
+/*   Updated: 2025-10-04 16:45:59 by 0xBoris                                     */
+/*                                                                               */
+/* ***************************************************************************** */
 ```
 
 ## Requirements
@@ -89,8 +74,6 @@ None at this time. If you encounter any issues, please report them on the [GitHu
 
 - Initial release with header insertion functionality
 - Configurable GitHub username
-- Keyboard shortcuts support
-- Multi-language file support
 
 ## Contributing
 
@@ -105,15 +88,3 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you find this extension useful, please consider:
-- ⭐ Starring the repository
-- 🐛 Reporting bugs
-- 💡 Suggesting new features
-- 📝 Contributing to the code
-
----
-
-**Enjoy coding with UDX Header!** 🚀
